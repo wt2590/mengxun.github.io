@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>欢迎</title>
+  <link rel="stylesheet" href="./css/enter.css">
+
+</head>
+<body>
+  <div class="text-container">
+    <p class="text">时间飞逝，请珍惜每分每秒!</p>
+    <p class="text">世界很美好，请多留心这个世界！</p>
+    <p class="text">人生苦短，请及时行乐！</p>
+  </div>
+
+  <div class="button-container">
+    <a href="./main.html">进入</a>
+  </div>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var texts = document.getElementsByClassName("text");
+      var index = 0;
+
+      setInterval(function() {
+        texts[index].style.display = "none";
+        index = (index + 1) % texts.length;
+        texts[index].style.display = "block";
+      }, 1000);
+    });
+  </script>  
+</body>
+</html>
