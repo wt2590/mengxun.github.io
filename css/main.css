@@ -1,0 +1,186 @@
+    /* 全局样式 */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+  
+      /* 导航菜单样式 */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+  
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .navbar li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+  
+      .navbar li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+      }
+  
+      /* 页面样式 */
+      .page {
+        padding: 20px;
+        background-color: #fff;
+        color: #333;
+        padding-top: 40px
+      }
+  
+      .page h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      .page p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+  
+      /* 关于我们页面样式 */
+      #about {
+        background-color: #f9f9f9;
+        background-image: url("../src/img/人物档案.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 600px;
+      }
+  
+      #about a button {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+  
+      #about a button:hover {
+        background-color: #555;
+      }
+  
+      /* 精彩瞬间页面样式 */
+      #services {
+        height: 600px;
+        background-image: url("../src/img/servce.jpg");
+        /* 替换为你自己的背景图片路径 */
+        background-size: cover;
+        background-position: center;
+        color: #333;
+        /* text-align: center; */
+      }
+  
+  
+      .mybutton {
+        display: none;
+        /* 初始状态下隐藏按钮 */
+      }
+  
+      #services:hover .mybutton {
+        display: inline-block;
+        /* 鼠标悬停时显示按钮 */
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+  
+  
+  
+      /* 新闻/博客页面样式 */
+      #news {
+        background-color: #f5f5f5;
+      }
+  
+  
+      /*首页样式  */
+
+      #home {
+        background-image: url(#);
+        /* 添加主页背景图片路径 */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+      }
+  
+      #home h1 {
+        font-size: 36px;
+        margin-top: 150px;
+      }
+  
+      #home p {
+        font-size: 18px;
+        margin-bottom: 50px;
+      }
+      #home {
+        position: relative;
+        color: #fff;
+        text-align: center;
+        padding: 100px;
+        animation: backgroundAnimation 9s infinite;
+      }
+  
+      #home h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+  
+      #home p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      #home a {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+  
+      @keyframes backgroundAnimation {
+        0% {
+          background-image: url("../src/img/4.jpg");
+          /* 第一张背景图片路径 */
+        }
+  
+        33% {
+          background-image: url("../src/img/1.jpg");
+          /* 第二张背景图片路径 */
+        }
+  
+        66% {
+          background-image: url("../src/img/2.jpg");
+          /* 第三张背景图片路径 */
+        }
+  
+        100% {
+          background-image: url("../src/img/3.jpg");
+          /* 第四张背景图片路径 */
+        }
+      }
